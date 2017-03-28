@@ -31,7 +31,8 @@
 function fn_egov_select(emplyrId) {
 	document.getElementById("listForm").emplyrId.value = emplyrId;
    	document.getElementById("listForm").action = "<c:url value='/comtnemplyrinfo/updateComtnemplyrinfoView.do'/>";
-   	document.getElementById("listForm").submit();
+   	document.getElementById("listForm").metho = 'get';
+	document.getElementById("listForm").submit();
 }
 
 /* 글 등록 화면 function */
